@@ -18,7 +18,7 @@ import org.springframework.transaction.PlatformTransactionManager;
 
 /**
  * 
- * @author fanxiuming
+ * @author czc
  *
  */
 @Configuration
