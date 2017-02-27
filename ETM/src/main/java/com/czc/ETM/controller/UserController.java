@@ -11,7 +11,6 @@ import com.czc.ETM.service.UserService;
 
 
 @Controller
-//@RequestMapping("/newFriend")
 public class UserController {
 	public final static int SUCCESS = 200;
 	@Autowired
