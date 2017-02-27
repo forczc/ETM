@@ -4,5 +4,5 @@ import com.czc.ETM.model.User;
 
 
 public interface UserMapper {
-	public User findUserInfo();
+	public User getAllUserList();
 }

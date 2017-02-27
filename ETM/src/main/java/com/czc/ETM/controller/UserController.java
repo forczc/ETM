@@ -12,7 +12,6 @@ import com.czc.ETM.service.UserService;
 
 @Controller
 public class UserController {
-	public final static int SUCCESS = 200;
 	@Autowired
     private UserService userService;
 
@@ -23,7 +22,7 @@ public class UserController {
     @RequestMapping("/getUserInfo")
     @ResponseBody
     public User getUserInfo() {
-        User user = userService.getUserInfo();
+        User user = userService.getAllUserList();
         if(user!=null){
             System.out.println("user.getName():"+user.getName());
         }
