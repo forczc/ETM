@@ -3,7 +3,7 @@ package com.czc.ETM.model;
 public class TaskGroup {
 	private int id;
 	private String name;
-	private int tid;
+	private Team team;
 	
 	public int getId() {
 		return id;
@@ -17,10 +17,10 @@ public class TaskGroup {
 	public void setName(String name) {
 		this.name = name;
 	}
-	public int getTid() {
-		return tid;
+	public Team getTeam() {
+		return team;
 	}
-	public void setTid(int tid) {
-		this.tid = tid;
+	public void setTeam(Team team) {
+		this.team = team;
 	}
 }
