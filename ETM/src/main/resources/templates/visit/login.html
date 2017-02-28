@@ -1,22 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
 <meta charset="UTF-8" />
 <title>ETM</title>
 
-<link rel="stylesheet" type="text/css" href="css/visit.css">
+<link rel="stylesheet" type="text/css" th:href="@{/visit/css/visit.css}" />
 </head>
 <body>
 	<div class="c-screen">
 		<div class="loginContainer">
 			<div class="content">
-				<img src="img/login_bg.png" width="1010px" height="300px"/>
+				<img th:src="@{/visit/img/login_bg.png}" width="1010px" height="300px"/>
 				<div class="log_box">
 					<div class="log_div">
-						<input class="log_input col_gray" type="text" name="account" id="account" autofocus="true" value="" placeholder="请输入用户名">
+						<input class="log_input col_gray" type="text" name="account" id="account" autofocus="true" value="" placeholder="请输入用户名" />
 					</div>
 					<div class="log_div">
-						<input class="log_input" type="password" name="password" id="password" autocomplete="off" placeholder="请输入密码">
+						<input class="log_input" type="password" name="password" id="password" autocomplete="off" placeholder="请输入密码" />
 					</div>
 					<div class="btn_box">
 						<div style="display: inline-block; margin-top: 6px;">
@@ -27,8 +27,8 @@
 					</div>
 				</div>
 			</div>
-			<div class="otherWords">-企业工作计划管理平台-</div>
-			<div class="footer">Copyright © 2017 Astorm\czc All rights reserved</div>
+			<div class="otherWords"><a href="index">1</a>-企业工作计划管理平台-</div>
+			<div th:include="visit/fragment::footer" class="footer"></div>
 		</div>
 	</div>
 </body>

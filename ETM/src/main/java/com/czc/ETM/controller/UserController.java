@@ -34,12 +34,13 @@ public class UserController {
      * @param map
      * @return
      */
-    @RequestMapping("/")
-    public String index(ModelMap map) {
-        // 加入一个属性，用来在模板中读取
-        map.addAttribute("host", "http://localhost:8080");
-        // return模板文件的名称，对应src/main/resources/templates/index.html
-        return "index";  
+    @RequestMapping("/login")
+    public String login() {
+        return "visit/login";  
     }
 
+    @RequestMapping("/index")
+    public String index() {
+        return "visit/index";  
+    }
 }
