@@ -1,5 +1,7 @@
 package com.czc.ETM.model;
 
+import java.util.List;
+
 
 public class User {
     private int id;
@@ -7,6 +9,7 @@ public class User {
     private String acct;
     private String password;
     private String pic;
+    private List<Share> shareList;
     
 	public String getName() {
 		return name;
@@ -37,5 +40,11 @@ public class User {
 	}
 	public void setId(int id) {
 		this.id = id;
+	}
+	public List<Share> getShareList() {
+		return shareList;
+	}
+	public void setShareList(List<Share> shareList) {
+		this.shareList = shareList;
 	}
 }

@@ -2,8 +2,8 @@ package com.czc.ETM.model;
 
 public class Share {
 	private int id;
-	private int uid;
-	private int sectionId;
+	private User user;
+	private ShareSection section;
 	private String title;
 	private String content;
 	private String time;
@@ -14,17 +14,17 @@ public class Share {
 	public void setId(int id) {
 		this.id = id;
 	}
-	public int getUid() {
-		return uid;
+	public User getUser() {
+		return user;
 	}
-	public void setUid(int uid) {
-		this.uid = uid;
+	public void setUser(User user) {
+		this.user = user;
 	}
-	public int getSectionId() {
-		return sectionId;
+	public ShareSection getSection() {
+		return section;
 	}
-	public void setSectionId(int sectionId) {
-		this.sectionId = sectionId;
+	public void setSection(ShareSection section) {
+		this.section = section;
 	}
 	public String getTitle() {
 		return title;
